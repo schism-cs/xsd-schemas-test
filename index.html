@@ -2,27 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>XML Schema Repository</title>
-  <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h2 { border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
-    a { font-family: monospace; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XML Schema Repository — EcoMiC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>XML Schema Repository</h1>
-  <p>Stable URLs for all published XSD schemas. Do not use <code>latest/</code> in production — always pin to a version.</p>
+  <header>
+    <img src="assets/logo.png" alt="Your Org Logo">
+    <div>
+      <h1>METS XML Schema Repository</h1>
+      <p>Stable, versioned XSD schemas for METS XML validation.</p>
+    </div>
+  </header>
 
-  <h2>v2 (current)</h2>
-  <ul>
-    <li><a href="schemas/v2/mods.xsd">schemas/v2/mods.xsd</a></li>
-    <li><a href="schemas/v2/mix20.xsd">schemas/v2/mix20.xsd</a></li>
-  </ul>
+  <main>
+    <section>
+      <h2>v2 <span class="badge current">current</span></h2>
+      <ul>
+        <li><a href="schemas/v2/mods.xsd">schemas/v2/mods.xsd</a></li>
+        <li><a href="schemas/v2/mix20.xsd">schemas/v2/mix20.xsd</a></li>
+      </ul>
+    </section>
 
-  <h2>v1 (legacy)</h2>
-  <ul>
-    <li><a href="schemas/v1/mods.xsd">schemas/v1/mods.xsd</a></li>
-    <li><a href="schemas/v1/mix20.xsd">schemas/v1/mix20.xsd</a></li>
-  </ul>
+    <section>
+      <h2>v1 <span class="badge legacy">legacy</span></h2>
+      <ul>
+        <li><a href="schemas/v1/mods.xsd">schemas/v1/mods.xsd</a></li>
+        <li><a href="schemas/v1/mix20.xsd">schemas/v1/mix20.xsd</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Maintained by <a href="https://ecomic.cultura.gov.it/" target="_blank">EcoMiC</a></p>
+  </footer>
 </body>
 </html>
